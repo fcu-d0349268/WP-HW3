@@ -7,7 +7,7 @@
 <body>
     <script>
         var Fah_temp = prompt("輸入華氏溫度")
-        var trans_temp = function(Fah_temp){
+        var trans_temp = (Fah_temp) => {
             var Cel_temp = (Fah_temp - 32) * (5/9)
             return Cel_temp
         }
