@@ -6,12 +6,13 @@
 </head>
 <body>
     <script>
-        var Fah_temp = prompt("輸入華氏溫度")
-        var trans_temp = (Fah_temp) => {
-            var Cel_temp = (Fah_temp - 32) * (5/9)
-            return Cel_temp
+        var Cel_temp = prompt("輸入攝氏溫度")
+        var trans_temp = (Cel_temp) => {
+            var Fah_temp = (9/5) * Cel_temp + 32
+            return Fah_temp
         }
-        document.write("<h1>攝氏溫度為" + trans_temp(Fah_temp) + "˚C</h1>")
+        //我命名方式是Python派的
+        document.write("<h1>攝氏溫度為" + Cel_temp + "˚C時，華氏溫度為" + trans_temp(Cel_temp) + "˚F</h1>")
     </script>
 </body>
 </html>
